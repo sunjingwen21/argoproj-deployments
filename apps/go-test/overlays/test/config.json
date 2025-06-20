@@ -1,0 +1,11 @@
+{
+  "appName": "go-test",
+  "userGivenName": "go-test",
+  "destNamespace": "default",
+  "destServer": "https://kubernetes.default.svc",
+  "srcPath": "apps/go-test/overlays/test",
+  "srcRepoURL": "https://github.com/sunjingwen21/argoproj-deployments.git",
+  "srcTargetRevision": "",
+  "labels": null,
+  "annotations": null
+}
