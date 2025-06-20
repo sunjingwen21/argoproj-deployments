@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: go-test-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: go-test
+  template:
+    metadata:
+      labels:
+        app: go-test
+    spec:
+      containers:
+      - name: webserver-simple
+        image: docker.io/nginx/nginx:latest
+        ports:
+        - containerPort: 8080
